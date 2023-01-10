@@ -1,0 +1,147 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta( http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        title Hai Sky - H Y H
+        link(rel='icon', type='image/x-icon', href='/assets/i.ico')
+        script(src='/all.js', crossorigin='anonymous')
+        link(rel="stylesheet" href="/animate.min.css")
+        link(rel="stylesheet" href="/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+        link(href="/normalize.min.css" rel="stylesheet")
+        link(href='css/styles.css', rel='stylesheet')
+        link(href="/responsive.css" rel="stylesheet")
+        include ./mixins.pug
+    body#page-top
+
+        nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
+            .container
+                a.navbar-brand(href='#page-top') Đức Hải
+                button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button')
+                    | Menu 
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse.justify-content-end
+                    ul.menu-list.navbar-nav
+                        +menu-item 
+                        +menu-item("ABOUT")
+                        +menu-item("CONTACT ME")
+
+
+
+        header.masthead.bg-primary.text-white.text-center
+            .container.d-flex.align-items-center.flex-column
+
+                img.masthead-avatar.mb-5(src='assets/img/avataaars.svg', alt='avatar')
+                h1.masthead-heading.text-uppercase.mb-0 ĐỨC HẢI
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                p.masthead-subheading.font-weight-light.mb-0 Funny - Happy - Friendly - Sociable
+
+        section#interest.page-section.interest
+            .container
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 INTEREST
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                .row.justify-content-center
+                    .col-md-6.col-lg-4.mb-5
+                        .interest-item.mx-auto
+            
+                            img.img-fluid(src='assets/img/interest/game.png', alt='game')
+                    .col-md-6.col-lg-4.mb-5
+                        .interest-item.mx-auto
+                            
+                            img.img-fluid(src='assets/img/interest/cake.png', alt='cake')
+                    .col-md-6.col-lg-4.mb-5
+                        .interest-item.mx-auto
+                            
+                            img.img-fluid(src='assets/img/interest/circus.png', alt='picnic')
+                    .col-md-6.col-lg-4.mb-5.mb-lg-0
+                        .interest-item.mx-auto
+                            
+                            img.img-fluid(src='assets/img/interest/music.png', alt='music')
+                    .col-md-6.col-lg-4.mb-5.mb-md-0
+                        .interest-item.mx-auto
+                            
+                            img.img-fluid(src='assets/img/interest/music.png', alt='music')
+                    .col-md-6.col-lg-4
+                        .interest-item.mx-auto
+                            
+                            img.img-fluid(src='assets/img/interest/music.png', alt='music')
+
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+                h2.page-section-heading.text-center.text-uppercase.text-white ABOUT
+                .divider-custom.divider-light
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                .text-row
+                    .le Tôi là Lê Đức Hải, rất may mắn khi được thực tập tại Sun Asterisk. Đây là trải nghiệm thực tập đầu tiên của tôi.
+                    .ri Chưa từng học qua Frontend, nên phải cố gắng học tập nhiều hơn và hoàn thành thực tập còn ăn tết không có nước mắt.
+                .text-center.mt-4
+                    a.btn.btn-xl.btn-outline-light(href='#')
+                        | Xem thêm!
+
+        section#contact.page-section
+            .container
+                h2.page-section-heading.text-center.text-uppercase.text-secondary.mb-0 Contact Me
+                .divider-custom
+                    .divider-custom-line
+                    .divider-custom-icon
+                        i.fas.fa-star
+                    .divider-custom-line
+                .row.justify-content-center
+                    .col-lg-8.col-xl-7
+                        form.contactForm.d-flex
+                            +form("Full Name:")
+                            +form("Gmail.com:")
+                            +form("Phone Numbers:")
+                            +form("Facebook:")
+                            +form("Location:")
+                            +form("Messages:")
+
+                            button.btn.btn-xl.btn-outline-dark(type='submit') Send
+
+        footer.footer.text-center
+            .container
+                .row
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 Location
+                        p.lead.mb-0
+                            | Thành Vinh, Đông Nam
+                            br
+                            | Đông Sơn, Thanh Hóa
+                    .col-lg-4.mb-5.mb-lg-0
+                        h4.text-uppercase.mb-4 FOLLOW ME
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-facebook-f
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-twitter
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-linkedin-in
+                        a.btn.btn-outline-light.btn-social.mx-1(href='#!')
+                            i.fab.fa-fw.fa-dribbble
+                    .col-lg-4
+                        h4.text-uppercase.mb-4 About Website
+                        p.lead.mb-0
+                            | Website được tạo bởi tui 
+                            a(href='#') Lê Đức Hải
+                            | .
+        div.copyright.py-4.text-center.text-white
+            .container
+                small Copyright &copy; Hải's Website 2023
+        script(src="/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        script(src="/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+        script(src="/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")

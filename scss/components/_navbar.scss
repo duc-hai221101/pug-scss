@@ -1,0 +1,42 @@
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+
+    .navbar-brand {
+        @include link;
+    }
+    .collage{
+        justify-content: flex-end;
+    }
+    .menu-list {
+        right: 0;
+
+        li {
+            padding: 10px 20px;
+            margin: 0px auto;
+        }
+        a {
+            cursor: pointer;
+            @include link;
+            &:hover {
+                    color: $primary;
+            }
+
+                &:active,
+                &:focus {
+                    color: #fff;
+                }
+
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        @include fz;
+        padding: 0.8rem;
+    }

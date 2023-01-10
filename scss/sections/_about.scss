@@ -1,0 +1,16 @@
+.text-row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+    margin: 0 auto;
+    .le , .ri{
+        padding: 10px 10px;
+        width: 50%;
+        text-align:left;
+        @include fz;
+    }
+}
+.container{
+    align-items: center;
+}

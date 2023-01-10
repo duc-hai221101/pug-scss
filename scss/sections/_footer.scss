@@ -1,0 +1,11 @@
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $secondary;
+    @include link;
+
+}
+
+.copyright {
+    background-color: darken($secondary, 10%);
+}
